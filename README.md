@@ -38,7 +38,6 @@ Import the install.sql to your MySQL Database. There will be a default user in t
 Furthermore, you need to edit the /includes/config.inc.php and fill in your database connection credentials.
 
 ```
-#!php
 /* ********************** */
 /* -  DB Konfiguration 	- */
 /* ********************** */
