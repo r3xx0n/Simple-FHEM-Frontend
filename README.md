@@ -36,7 +36,8 @@ Please not that this project is still under development and far from being a pro
 ## Setup ##
 
 ### Database configuration ###
-Import the install.sql to your MySQL Database. There will be a default user in the users table with the username and passwort "admin".
+Import the cms.sql from /install_db/ to your MySQL Database. There will NO default user in the users table. You need to create your own thourgh the PHP function "password_hash". 
+Use the standard settings for this function, or it will not work.
 
 Furthermore, you need to edit the /includes/config.inc.php and fill in your database connection credentials.
 
