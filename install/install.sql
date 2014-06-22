@@ -10,6 +10,12 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
+--
+-- Datenbank: `cms`
+--
+CREATE DATABASE IF NOT EXISTS `cms` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `cms`;
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -56,6 +62,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(128) NOT NULL,
   `disabled` tinyint(1) unsigned NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `hash`, `email`, `disabled`) VALUES
+(1, 'fhem', '$2y$10$RCLkLOGYidcB8lnZkyUiUOMKyx7L3laa/J8UUEvZYTN2vuz9f/lPG', '', 0);
 
 --
 -- Indexes for dumped tables
