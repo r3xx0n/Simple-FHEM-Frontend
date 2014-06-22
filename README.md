@@ -1,9 +1,12 @@
-Simple-FHEM-Frontend
-====================
+# README #
+
+Simple FHEM Frontend
 
 ## What is this repository for? ##
 
 Simple FHEM Frontend is an open source frontend for the fhem home automation system, built with PHP+MySQL (Server), HTML5, Bootstrap, jQuery, Morris.js, Font Awesome (Frontend).
+
+Live Preview (Login): http://r3xx0n.selfhost.eu
 
 Please not that this project is still under development and far from being a productive version!
 
@@ -38,6 +41,7 @@ Import the install.sql to your MySQL Database. There will be a default user in t
 Furthermore, you need to edit the /includes/config.inc.php and fill in your database connection credentials.
 
 ```
+#!php
 /* ********************** */
 /* -  DB Konfiguration 	- */
 /* ********************** */
