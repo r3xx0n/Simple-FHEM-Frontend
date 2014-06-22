@@ -1,0 +1,79 @@
+/**
+* This file is part of simple FHEM
+*
+*   simple FHEM - A simple webfrontend for FHEM home automation
+*   Copyright (C) 2014  Sascha Wilts
+*
+*   This program is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+*   Sascha Wilts - info@saschawilts.de
+**/
+
+/* PRIMARY LAYOUT ELEMENTS   -------------------------------------------*/
+
+body { background: #efefef; }
+.container-content { background: #fff; border: 1px solid #e7e7e7; }
+.alert-info { color: #16879d; border-color: #d3f3f9; background-color: #e9f9fc; }
+.badge-info { color: #fff; background-color: #49cc8d; }
+
+/* NAVIGATION   --------------------------------------------------------*/
+
+.navbar-fhem { background-color: #fff; border-color: #e7e7e7; }
+.navbar-fhem .navbar-brand { color: #777; }
+.navbar-fhem .navbar-brand:hover, .navbar-fhem .navbar-brand:focus { color: #49cc8d; background-color: transparent; }
+.navbar-fhem .navbar-text { color: #777; }
+.navbar-fhem .navbar-nav > li > a { color: #777; }
+
+.navbar-fhem .navbar-nav > li > a:hover, .navbar-fhem .navbar-nav > li > a:focus, .navbar-fhem .navbar-nav > .active > a,
+.navbar-fhem .navbar-nav > .active > a:hover, .navbar-fhem .navbar-nav > .active > a:focus { color: #fff; background-color: #49cc8d; }
+
+.navbar-fhem .navbar-nav > .disabled > a, .navbar-fhem .navbar-nav > .disabled > a:hover, 
+.navbar-fhem .navbar-nav > .disabled > a:focus { color: #ccc; background-color: transparent; }
+
+.navbar-fhem .navbar-toggle { border-color: #fff; }
+.navbar-fhem .navbar-toggle:hover, .navbar-fhem .navbar-toggle:focus { background-color: #3aaf76; }
+.navbar-fhem .navbar-toggle .icon-bar { background-color: #fff; }
+.navbar-fhem .navbar-collapse, .navbar-fhem .navbar-form { border-color: #e7e7e7; }
+
+.navbar-fhem .navbar-nav > .open > a, .navbar-fhem .navbar-nav > .open > a:hover,
+.navbar-fhem .navbar-nav > .open > a:focus { background-color: #e7e7e7; color: #555; }
+
+/* IOS7 SWITCH ----------------------------------------------------------*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .effeckt-ckbox-ios7[type=checkbox], .effeckt-rdio-ios7[type=radio] { box-shadow: inset 0px 0px 0px 1px #e6e6e6; background: white; }
+  .effeckt-ckbox-ios7[type=checkbox]:checked, .effeckt-rdio-ios7:checked { box-shadow: inset 0px 0px 0px 20px #49cc8d; }
+
+  .effeckt-ckbox-ios7[type=checkbox]:after, .effeckt-rdio-ios7[type=radio]:after { box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2); background: white; }
+}
+
+/* MOBILE THEME ---------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+	/* FOR FIXED NAVIGATION ---------------------------------------------*/
+    body { background-color: #fff; }
+
+	/* NAVIGATION MOBILE ------------------------------------------------*/
+
+    .navbar-fhem { background-color: #49cc8d; border-color: #e7e7e7; }
+    .navbar-fhem .navbar-brand { color: #fff; }
+    .navbar-fhem .navbar-brand:hover, .navbar-fhem .navbar-brand:focus { color: #fff; }
+    .navbar-fhem .navbar-nav  > li > a { color: #fff; }
+    .navbar-fhem .navbar-nav > li > a:hover, .navbar-fhem .navbar-nav > li > a:focus, .navbar-fhem .navbar-nav > .active > a, 
+    .navbar-fhem .navbar-nav > .active > a:hover, .navbar-fhem .navbar-nav > .active > a:focus { color: #333; background-color: #fff; }
+    .navbar-fhem .navbar-nav .open .dropdown-menu > li > a:hover, 
+    .navbar-fhem .navbar-nav .open .dropdown-menu > li > a:focus { color: #fff; background-color: transparent; }
+    .navbar-collapse { background: #49cc8d; }
+}

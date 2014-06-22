@@ -1,0 +1,92 @@
+/**
+* This file is part of simple FHEM
+*
+*   simple FHEM - A simple webfrontend for FHEM home automation
+*   Copyright (C) 2014  Sascha Wilts
+*
+*   This program is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+*   Sascha Wilts - info@saschawilts.de
+**/
+
+/* FOR FIXED NAVIGATION ------------------------------------------------*/
+
+body { padding-top: 100px; }
+
+/* PRIMARY LAYOUT ELEMENTS   -------------------------------------------*/
+
+.container-content { padding: 20px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.container-content #text { padding: 20px; }
+.container-footer p { float: right; padding-top: 10px; padding-right: 10px; font-size: 11px; }
+
+/* BUTTONS -------------------------------------------------------------*/
+
+button.btn-fhem + button.btn-fhem { margin-left: 5px; }
+
+/* NAVIGATION   --------------------------------------------------------*/
+
+.navbar-fhem { height: 80px; padding-top: 20px; }
+.navbar-fhem .navbar-brand { padding-top: 8px; }
+.navbar-fhem .navbar-nav > li > a { border-radius: 5px; padding-top: 8px; padding-bottom: 8px; text-shadow: none; }
+.navbar-fhem .navbar-nav > li + li { margin-left: 10px; }
+.navbar-collapse { border-top: none; box-shadow: none; -webkit-overflow-scrolling: touch; }
+
+/* LOGIN FORM ----------------------------------------------------------*/
+
+.form-signin { max-width: 300px; padding: 19px 29px 29px; margin: 0 auto 15px; background-color: #fff; border: 1px solid #e5e5e5; 
+            -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05); 
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05); box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+
+/* IOS7 SWITCH ----------------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  .effeckt-ckbox-ios7[type=checkbox], 
+  .effeckt-rdio-ios7[type=radio] {-webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 15px; border: none; 
+                                cursor: pointer; display: inline-block; height: 31px; padding: 1px; position: relative; margin: 0px; width: 52px;
+                                -webkit-transition: all 0.25s ease-out; -o-transition: all 0.25s ease-out; transition: all 0.25s ease-out;
+                                -webkit-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+
+  .effeckt-ckbox-ios7[type=checkbox]:after,
+  .effeckt-rdio-ios7[type=radio]:after { border-radius: 15px; content: ''; cursor: pointer; height: 29px; position: absolute; width: 29px;
+                                    -webkit-transition: all 0.1s ease-in 0.1s; -o-transition: all 0.1s ease-in 0.1s;
+                                    transition: all 0.1s ease-in 0.1s; }
+
+  .effeckt-ckbox-ios7[type="checkbox"]:checked:after,
+  .effeckt-rdio-ios7[type="radio"]:checked:after { left: 22px; }
+
+}
+
+/* MOBILE THEME ---------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+    /* FOR FIXED NAVIGATION ---------------------------------------------*/
+
+    body { padding-top: 80px; }
+
+    /* PRIMARY LAYOUT ELEMENTS   ----------------------------------------*/
+
+    .container-content { border: none; padding-top: 0px; }
+
+    /* NAVIGATION MOBILE ------------------------------------------------*/
+
+    .navbar-fhem { height: 70px; border-bottom: 2px solid #e7e7e7; }
+    .navbar-fhem .navbar-brand { padding-top: 15px; }
+    .navbar-fhem .navbar-nav  > li > a { border-radius: 0; padding-top: 10px; padding-bottom: 10px; margin: 2px; }
+    .navbar-fhem .navbar-nav > li + li { margin-left: 0px; }
+    .navbar-collapse { width: auto; border-bottom: none; box-shadow: 0 5px 5px -8px #000000; }
+    .navbar-right > li { margin-right: 0px; }
+    .navbar-toggle { margin-right: 15px; padding: 7px 7px; margin-top: 12px; margin-bottom: 8px; border: none; }
+
+}
