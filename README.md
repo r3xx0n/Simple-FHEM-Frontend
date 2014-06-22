@@ -4,7 +4,7 @@ Simple FHEM Frontend
 
 ## What is this repository for? ##
 
-Simple FHEM Frontend is an open source frontend for the fhem home automation system, built with PHP+MySQL (Server), HTML5, Bootstrap, jQuery, Morris.js, Font Awesome (Frontend).
+Simple FHEM Frontend is an open source frontend for the fhem home automation system, built with PHP+MySQL (Server), HTML5, Bootstrap, jQuery, Font Awesome (Frontend).
 
 Live Preview (Login): http://r3xx0n.selfhost.eu
 
@@ -12,25 +12,26 @@ Please not that this project is still under development and far from being a pro
 
 ## Features ##
 
-* Login Page mit Validation
-* Bootstrap mit Untersützung für Mobile Devices
-* Get/Set Device States
-* List Rooms
-* List Devices
+* login page with validation
+* Bootstrap with support for mobile devices
+* get/set device states
+* list rooms
+* list devices
+* list timer
+* OS information
 
 ## Planned features ##
 
-* get/Set Timer
+* set timer
 * temperature graphs
 * weather page
 * energy monitoring
-* OS information (realtime)
 
 ## Requirements ##
 
 * MySQL
 * PHP 5.5+
-* Webserver (Apache2, nginx)
+* Webserver (Apache2 or nginx [recommended])
 * a fully configured FHEM Server
 
 ## Setup ##
