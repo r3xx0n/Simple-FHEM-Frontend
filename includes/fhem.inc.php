@@ -27,7 +27,7 @@ class fhem {
     	global $errormessage;
         $xmllist = '';
         $address = 'tcp://'.config::FHEM_HOST.':'.config::FHEM_PORT;
-        $timeout = 5;
+        $timeout = config::FHEM_TIMEOUT;
 
         if (($fp = stream_socket_client($address, $errno, $errstr, $timeout)) === FALSE) {
             $return = $errormessage = "ERROR: '$address': $errstr ($errno)";

@@ -44,6 +44,7 @@ class config {
 
 	const FHEM_HOST		= 'localhost'; 		// FHEM Adresse
 	const FHEM_PORT		= '7072'; 			// FHEM Telnet Port
+	const FHEM_TIMEOUT  = 10;				// Timeout for Telnet
 }
 
 ?>
