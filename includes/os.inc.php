@@ -125,17 +125,7 @@ class os {
 		return $return;
 		
 	}
-
-	static function processor()	{
-		$processor = str_replace("-compatible processor", "", explode(": ", exec("cat /proc/cpuinfo | grep Processor"))[1]);
-		return $processor;
-	}
-
-	static function currenttime() {
-		$current_time = exec("date +'%d %b %Y<br />%T %Z'");
-		return $current_time;
-	}
-	
+		
 }
 
 ?>
