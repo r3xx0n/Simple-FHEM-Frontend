@@ -8,8 +8,8 @@ Simple FHEM Frontend is an open source frontend for the fhem home automation sys
 
 Live Preview (Login): http://r3xx0n.selfhost.eu
 
-Please not that this project is still under development and far from being a productive version!
-
+#### Please note that this project is still under development and far from being a productive version! ####
+ 
 ## Features ##
 
 * login page with validation
